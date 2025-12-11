@@ -21,8 +21,8 @@ RECIPIENTS = ["04shivm@gmail.com"]    # recipients (verify if in sandbox)
 SUBJECT = "AWS IAM Users & Groups Report"
 ATTACHMENT_FILENAME = "iam_users_groups_report.xlsx"
 
-# Logos (user-provided PhiCommerce webp + recommended AWS PNG)
-PHI_LOGO_URL = "https://test.com/wp-content/uploads/2024/09/logo-300x170.png.webp"
+# Logos (user-provided Company-Name webp + recommended AWS PNG)
+Company_LOGO_URL = "https://test.com/wp-content/uploads/2024/09/logo-300x170.png.webp"
 #AWS_LOGO_URL = "https://a0.awsstatic.com/main/images/logos/aws-logo-color.png"
 
 # -------------------------
@@ -284,7 +284,7 @@ def lambda_handler(event, context):
                 <table cellpadding="0" cellspacing="0" style="background:#ffffff;">
                   <tr>
                     <td style="padding-right:18px; background:#ffffff;">
-                      <img src="{PHI_LOGO_URL}" alt="PhiCommerce" height="60" style="display:block; background:#ffffff;">
+                      <img src="{Company_LOGO_URL}" alt="Company-Name" height="60" style="display:block; background:#ffffff;">
                     </td>
                   </tr>
                 </table>
