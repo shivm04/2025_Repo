@@ -1,0 +1,44 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SSMSendCommand",
+      "Effect": "Allow",
+      "Action": [
+        "ssm:SendCommand",
+        "ssm:GetCommandInvocation"
+      ],
+      "Resource": [
+        "arn:aws:ec2:*:*:instance/*",
+        "arn:aws:ssm:*:*:document/AWS-RunShellScript"
+      ]
+    },
+    {
+      "Sid": "AllowPassRoleForSSM",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "iam:PassedToService": "ssm.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid": "EC2DescribeInstances",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeInstances"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SendEmailViaSES",
+      "Effect": "Allow",
+      "Action": [
+        "ses:SendRawEmail"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
