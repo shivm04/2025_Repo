@@ -1,0 +1,10 @@
+{
+  "from_email": "04shivm@gmail.com",
+  "to_email": "04shivm@gmail.com",
+  "instances": [
+    {
+      "InstanceId": "i-0a62a22ede113fa7b",
+      "InstanceName": "Jenkins-Server"
+    }
+  ]
+}
