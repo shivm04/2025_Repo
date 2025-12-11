@@ -172,7 +172,7 @@ def send_email(from_email, to_email, summary, attachment_path):
             <img src="{LOGO_URL}" width="140" style="margin-bottom:20px;"/>
         </div>
 
-        <h2 style="text-align:center; color:#333;">Phicommerce - Server User Report</h2>
+        <h2 style="text-align:center; color:#333;">Company-Name - Server User Report</h2>
         <p style="text-align:center; color:#555;">Below is the summary of all servers:</p>
 
         {summary_html}
@@ -188,7 +188,7 @@ def send_email(from_email, to_email, summary, attachment_path):
     # MIME message
     msg = f"""From: {from_email}
 To: {to_email}
-Subject: Phicommerce - Server Users Report
+Subject: Company-Name - Server Users Report
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="NextPart"
 
