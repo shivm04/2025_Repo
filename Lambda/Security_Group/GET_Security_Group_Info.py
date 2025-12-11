@@ -20,7 +20,7 @@ RECIPIENTS = ["04shivm@gmail.com"]
 SUBJECT = "AWS Security Group Inbound & Outbound Rules Report"
 ATTACHMENT_FILENAME = "security_group_rules.xlsx"
 
-PHI_LOGO_URL = "https://test.com/wp-content/uploads/2024/09/logo-300x170.png.webp"
+Company_LOGO_URL = "https://test.com/wp-content/uploads/2024/09/logo-300x170.png.webp"
 
 
 # ----------------------------------------------------------------------
@@ -339,7 +339,7 @@ def lambda_handler(event, context):
 
             <tr>
               <td align="center" style="padding-bottom:12px;">
-                <img src="{PHI_LOGO_URL}" alt="PhiCommerce" height="60" style="display:block;">
+                <img src="{Company_LOGO_URL}" alt="Company-Name" height="60" style="display:block;">
               </td>
             </tr>
 
